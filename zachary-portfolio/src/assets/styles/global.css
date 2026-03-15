@@ -1,0 +1,106 @@
+/* ─── CSS VARIABLES ────────────────────────────────────────────────── */
+:root {
+  --jade:        #2D6A4F;
+  --jade-light:  #40916C;
+  --jade-pale:   #B7E4C7;
+  --ivory:       #F5F0E8;
+  --ivory-dark:  #E8E0D0;
+  --ink:         #1A1A18;
+  --ink-soft:    #3D3D38;
+  --red-tile:    #C0392B;
+  --gold:        #B8960C;
+  --tile-bg:     #FDFAF4;
+  --tile-shadow: rgba(45, 106, 79, 0.18);
+  --sans:        'DM Sans', sans-serif;
+  --serif:       'DM Serif Display', serif;
+  --cn:          'Noto Serif SC', serif;
+}
+
+/* ─── RESET ─────────────────────────────────────────────────────────── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--ivory);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: 16px;
+  overflow-x: hidden;
+}
+
+/* ─── SHARED SECTION STYLES ─────────────────────────────────────────── */
+section {
+  padding: 96px 48px;
+}
+
+.tile-pattern-bg {
+  background-color: var(--ivory);
+  background-image: url("data:image/svg+xml,%3Csvg width='60' height='80' viewBox='0 0 60 80' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='4' y='4' width='52' height='72' rx='6' fill='none' stroke='%232D6A4F' stroke-width='0.5' opacity='0.1'/%3E%3C/svg%3E");
+  background-size: 60px 80px;
+}
+
+/* ─── SHARED BUTTONS ─────────────────────────────────────────────────── */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--jade);
+  color: var(--ivory);
+  padding: 13px 26px;
+  border-radius: 4px;
+  font-size: 0.87rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-decoration: none;
+  transition: background 0.2s, transform 0.15s;
+  box-shadow: 3px 4px 0 rgba(45, 106, 79, 0.22);
+}
+.btn-primary:hover {
+  background: var(--jade-light);
+  transform: translate(-1px, -1px);
+}
+
+.btn-outline {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border: 1.5px solid var(--jade);
+  color: var(--jade);
+  padding: 13px 26px;
+  border-radius: 4px;
+  font-size: 0.87rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+  background: transparent;
+}
+.btn-outline:hover {
+  background: var(--jade);
+  color: var(--ivory);
+}
+
+/* ─── FADE-IN ANIMATION ──────────────────────────────────────────────── */
+.fade-in {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ─── RESPONSIVE ─────────────────────────────────────────────────────── */
+@media (max-width: 960px) {
+  section {
+    padding: 64px 24px;
+  }
+}
