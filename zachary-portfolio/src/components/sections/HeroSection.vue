@@ -259,6 +259,13 @@ const bgTiles = skillDefs.map((skill, i) => {
   line-height: 1.75;
   max-width: 500px;
   margin-bottom: 40px;
+
+  background: greyish-white;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border-radius: 10px;
+  padding: 16px 20px;
+  box-shadow: 0 2px 16px rgba(45, 106, 79, 0.08);
 }
 
 .hero-ctas {
