@@ -9,9 +9,9 @@ export const skills = [
 // ─── STATS ───────────────────────────────────────────────────────────
 export const stats = [
   { value: '4.42', label: 'GPA / 5.00' },
-  { value: '5.0',  label: 'Teaching Score / 5' },
+  { value: '5.0', label: 'Teaching Score / 5' },
   { value: '200+', label: 'Assignments Reviewed' },
-  { value: 'Top',  label: 'Hackathon Semi-finalist' },
+  { value: 'Top', label: 'Hackathon Semi-finalist' },
 ]
 
 // ─── EXPERIENCE ──────────────────────────────────────────────────────
@@ -64,8 +64,8 @@ export const projects = [
     tile: '一',
     title: 'Singapore Mahjong Discard Simulation',
     desc: 'ML-powered discard recommendation system for Singapore Mahjong. Encodes 14-tile hands (concealed + displayed), trains a Random Forest model, and integrates an OpenCV pipeline for tile detection from real gameplay images. Currently optimising via synthetic data generation.',
-    stack: ['Python', 'scikit-learn', 'OpenCV', 'Random Forest', 'NumPy'],
-    github: 'https://github.com/RageQuitters',
+    stack: ['Python', 'scikit-learn', 'OpenCV', 'NumPy'],
+    github: 'https://github.com/RageQuitters/Mahjong',
     demo: null,
   },
   {
@@ -73,24 +73,24 @@ export const projects = [
     title: 'Agentic Telegram Bot for Dementia Care',
     desc: 'End-to-end agentic system built for elderly dementia care — automated check-ins, adaptive memory games, and a caregiver dashboard. Semi-finalist in SimplifyNext Agentic AI Hackathon (top teams out of 80).',
     stack: ['Python', 'Flask', 'Telegram Bot API', 'Firebase Firestore', 'AWS boto3', 'Jinja'],
-    github: 'https://github.com/RageQuitters',
-    demo: null,
+    github: 'https://github.com/RageQuitters/TeamDraco',
+    demo: 'https://drive.google.com/file/d/1-8cu4GFSrYotrVYVte3ubRj32fwwZ5LL/view?usp=sharing',
   },
   {
     tile: '三',
     title: 'Algorithm Visualiser',
     desc: 'Animated binary search visualisation built with Manim — covers both slicing-based and index-based approaches, with per-iteration visual updates of Left, Right, and Mid pointers to illustrate search space reduction.',
     stack: ['Python', 'Manim'],
-    github: 'https://github.com/RageQuitters',
-    demo: null,
+    github: 'https://github.com/RageQuitters/manim',
+    demo: 'https://github.com/RageQuitters/manim/blob/main/source/media/videos/binary_search_animation/1080p60/CombinedBinarySearch.mp4',
   },
   {
     tile: '四',
     title: 'Brazilian E-Commerce Analysis',
     desc: 'End-to-end EDA on 100,000+ Olist orders — data cleaning, Portuguese→English translation via Google Translate API, filler word removal, word cloud visualisation, and Tableau dashboards.',
     stack: ['Python', 'pandas', 'Tableau', 'Google Translate API', 'Matplotlib'],
-    github: 'https://github.com/RageQuitters',
-    demo: null,
+    github: null,
+    demo: 'https://drive.google.com/file/d/1tmj5r8ZGt1UOmcNmGFoV4ZTdetRwPZG8/view?usp=sharing',
   },
 ]
 
