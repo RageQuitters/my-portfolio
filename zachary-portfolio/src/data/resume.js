@@ -63,7 +63,7 @@ export const projects = [
   {
     tile: '一',
     title: 'Singapore Mahjong Discard Simulation',
-    desc: 'ML-powered discard recommendation system for Singapore Mahjong. Trained neural networks on classification of Mahjong tiles, and a heuristic-based discard strategy that considers hand compostion and potential winning combinations.',
+    desc: 'ML-powered discard recommendation system for Singapore Mahjong. Trained neural networks on classification of Mahjong tiles, and a heuristic-based discard strategy that considers hand composition and potential winning combinations.',
     stack: ['Python', 'OpenCV', 'NumPy', 'torch'],
     github: 'https://github.com/RageQuitters/Mahjong',
     demo: null,
